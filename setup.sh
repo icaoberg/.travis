@@ -12,7 +12,7 @@ mkdir -p "${GOPATH}/src/github.com/sylabs"
 cd "${GOPATH}/src/github.com/sylabs"
 
 git clone https://github.com/sylabs/singularity
-git checkout tags/v3.5.2
+git checkout tags/v3.7.2
 cd singularity
 ./mconfig -v -p /usr/local
 make -j `nproc 2>/dev/null || echo 1` -C ./builddir all
